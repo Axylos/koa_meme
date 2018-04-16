@@ -1,8 +1,12 @@
 import * as Router from 'koa-router';
 
-const userRouter = new Router();
+export const userRouter = new Router();
+
+userRouter.prefix('/user/')
+
 userRouter.get('/', async (ctx) => {
-  ctx.body = 'hey there';
+  ctx.body = {
+    msg: 'wat'
+  };
 });
 
-export default userRouter;

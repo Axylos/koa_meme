@@ -4,7 +4,7 @@
    "description": "",
    "main": "index.js",
    "scripts": {
-      "test": "jest --watch --bail --runInBand",
+      "test": "jest --watch --bail true",
       "dev": "nodemon -e ts,  --exec 'ts-node' src/index.ts",
       "start": "ts-node src/index.ts"
    },
